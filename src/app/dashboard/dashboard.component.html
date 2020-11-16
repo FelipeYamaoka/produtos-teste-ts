@@ -1,0 +1,11 @@
+<h3>Lista de Produtos</h3>
+<p><b>Nome: Felipe de Souza Yamaoka</b></p>
+<p><b>RA: 1780481722023</b></p><br>
+<div class="grid grid-pad">
+  <a *ngFor="let produto of produtos" class="col-1-4"
+      routerLink="/detalhe/{{produto.codigo}}">
+    <div class="module produto">
+      <h4>{{produto.descricao}}</h4>
+    </div>
+  </a>
+</div>

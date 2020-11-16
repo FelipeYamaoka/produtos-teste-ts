@@ -1,0 +1,19 @@
+<p><b>Nome: Felipe de Souza Yamaoka</b></p>
+<p><b>RA: 1780481722023</b></p><br>
+<div>
+  <label>Codigo:
+    <input #codigo />
+  </label><br>
+  <label>Descricoa:
+    <input #descricao />
+  </label><br>
+  <label>Valor:
+    <input #valor />
+  </label><br>
+  <label>Fornecedor:
+    <input #fornecedor />
+  </label><br>
+  <button (click)="salvar(codigo.value, descricao.value,valor.value, fornecedor.value);codigo.value='';descricao.value='';valor.value='';fornecedor.value='';">
+    S A L V A R
+  </button>
+</div>

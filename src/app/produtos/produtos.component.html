@@ -1,0 +1,10 @@
+<h2>Meus Produtos</h2>
+<p><b>Nome: Felipe de Souza Yamaoka</b></p>
+<p><b>RA: 1780481722023</b></p><br>
+<ul class="produtos">
+  <li *ngFor="let produto of produtos">
+    <a routerLink="/detalhe/{{produto.codigo}}">
+    <span class="badge">{{produto.codigo}}</span> - {{produto.descricao}} - {{produto.valor}} - {{produto.fornecedor}} 
+    </a>
+  </li>
+</ul>
